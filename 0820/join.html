@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ebs joinpage</title>
+		<style>
+			input[type = text], input[type = password]{width:350px; height:20px}     			
+			td:first_child{text-align:center; font-weight:bold;}
+		</style>
+	
+	</head>
+
+	<body>
+		
+		<form action = "result.html" method = "post">
+			
+			<div style = "width: 800px; margin: 0 auto;">	
+				
+			<img src = "../img/logo.png" alt = "EBS LOGO" style = "vertical-align: middle;">
+			<span style = "color : #122d6b; vertical-align: middle;">회원가입</span>
+			
+			<hr style = "border:1px solid #122d6b;">
+				
+			<h3><img src = "../img/icon.png" alt = "EBS ICON"> <span>정보입력 및 본인확인</span></h3>
+			
+			
+			
+			<table width = "800px" height = "650px">
+				<tr>
+					<th style = "background-color : #dfe1eb" width = "180">아이디</th>
+					<td>
+						<input type = "text" name = "id" style = "width : 350px; height : 20px;"> 
+						<input type = "button" name = "중복확인" value = "중복확인" style = "width : 80px">
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb">비밀번호</th>
+					<td>
+						<input type = "password" name = "pwd" style = "width : 350px; height : 20px;" >
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb">비밀번호 확인</th>
+					<td>
+						<input type = "password" name = "pwdCheck" style = "width : 350px; height : 20px;" >
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb">이름</th>
+					<td>
+						<input type = "text" name = "name" style = "width : 350px; height : 20px;">
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb">성별</th>
+					<td>
+						<input type = "radio" name = "gender" value = "male">남성
+						<input type = "radio" name = "gender" value = "female">여성
+						<input type = "checkbox" name = "gen_agree" value = "agree" checked>선택정보(성별) 수집 및 이용 동의
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb">생년월일</th>
+					<td>
+						<select name = "year" style = "width : 100px; height : 20px;">
+							<option>2020</option>
+							<option>2019</option>
+							<option>2018</option>
+							<option>2017</option>
+						</select>년
+						<select name = "month" style = "width : 100px; height : 20px;">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>월
+						<select name = "day" style = "width : 100px; height : 20px;">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>일
+					</td>
+				</tr>
+				
+				<tr>
+					<th style = "background-color : #dfe1eb">이메일</th>
+					<td>
+						<input type = "text" name = "emailAddress" style = "height : 20px;">@
+						<input type = "text" name = "domain" style = "height : 20px;"><br>
+						<span style = "color : #631dad">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<th style = "background-color : #dfe1eb">휴대폰</th>
+					<td>
+						<input type = "text" name = "hp" style = "width : 350px; height : 20px;"> 
+						<input type = "checkbox" name = "hpAgree" value = "agree" checked>선택정보(휴대폰) 수집 및 이용 동의<br>
+						<span style = "color : #631dad">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<th style = "background-color : #dfe1eb">인증방법</th>
+					<td>
+						<input type = "radio" name = "certified" value = "hp" checked>휴대폰
+						<input type = "radio" name = "certified" value = "email">이메일
+						<input type = "button" value = "인증"  style = "width : 80px"><br>
+						<span style = "color : #631dad">휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</span>
+					</td>
+				</tr>
+				<tr>
+					<th style = "background-color : #dfe1eb" >인증번호</th>
+					<td>
+						<input type = "text" name = "certify_num" style = "width : 350px; height : 20px;" >
+						<input type = "button" value = "확인"  style = "width : 80px">
+					</td>
+				</tr>
+			
+			</table>
+			※ 교사 회원님을 위한 교사인증은 가입 후 회원정보수정에서 인증하실 수 있습니다.
+			</div>
+			
+			
+			
+			
+			<br><br>
+			<div style = "text-align: center;">
+			<input type = "submit" value = "확인"  style = "background-color : #122d6b; color : white; width : 120px; height : 40px">
+			</div>
+		
+		</form>
+		
+		
+		
+	</body>
+</html>
