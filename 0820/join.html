@@ -6,14 +6,17 @@
 		<style>
 			input[type = text], input[type = password]{width:350px; height:20px}     			
 			td:first_child{text-align:center; font-weight:bold;}
+			input[type = button]{border: 1px solid #3d7cc3;color: #3d7cc3;background: #FFF;font-size: 16px;}
+			input[type = submit]{color: #FFF;background: #042f6c;border: 1px solid #042f6c;font-size: 20px;}
+			table{border-collapse: collapse;}
+			p{color : #8600CF; font-size : 10pt}
+			
 		</style>
 	
 	</head>
 
 	<body>
-		
-		<form action = "result.html" method = "post">
-			
+			<form action = "../0821/result.jsp" method = "post">
 			<div style = "width: 800px; margin: 0 auto;">	
 				
 			<img src = "../img/logo.png" alt = "EBS LOGO" style = "vertical-align: middle;">
@@ -24,8 +27,7 @@
 			<h3><img src = "../img/icon.png" alt = "EBS ICON"> <span>정보입력 및 본인확인</span></h3>
 			
 			
-			
-			<table width = "800px" height = "650px">
+			<table width = "800px" height = "650px" border= "1">
 				<tr>
 					<th style = "background-color : #dfe1eb" width = "180">아이디</th>
 					<td>
@@ -86,9 +88,9 @@
 				<tr>
 					<th style = "background-color : #dfe1eb">이메일</th>
 					<td>
-						<input type = "text" name = "emailAddress" style = "height : 20px;">@
-						<input type = "text" name = "domain" style = "height : 20px;"><br>
-						<span style = "color : #631dad">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+						<input type = "text" name = "emailAddress" style = "width : 200px; height : 20px;">@
+						<input type = "text" name = "domain" style = "width : 200px; height : 20px;"><br>
+						<p>아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</p>
 					</td>
 				</tr>
 				
@@ -97,7 +99,7 @@
 					<td>
 						<input type = "text" name = "hp" style = "width : 350px; height : 20px;"> 
 						<input type = "checkbox" name = "hpAgree" value = "agree" checked>선택정보(휴대폰) 수집 및 이용 동의<br>
-						<span style = "color : #631dad">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+						<p>아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</p>
 					</td>
 				</tr>
 				
@@ -107,7 +109,7 @@
 						<input type = "radio" name = "certified" value = "hp" checked>휴대폰
 						<input type = "radio" name = "certified" value = "email">이메일
 						<input type = "button" value = "인증"  style = "width : 80px"><br>
-						<span style = "color : #631dad">휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</span>
+						<p>휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</p>
 					</td>
 				</tr>
 				<tr>
@@ -119,18 +121,18 @@
 				</tr>
 			
 			</table>
+			
 			※ 교사 회원님을 위한 교사인증은 가입 후 회원정보수정에서 인증하실 수 있습니다.
 			</div>
 			
 			
 			
-			
 			<br><br>
 			<div style = "text-align: center;">
-			<input type = "submit" value = "확인"  style = "background-color : #122d6b; color : white; width : 120px; height : 40px">
+			<input type = "submit" value = "확인" >
 			</div>
-		
 		</form>
+		
 		
 		
 		

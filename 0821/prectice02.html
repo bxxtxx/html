@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	
+		<style>
+			span{font-size : 15pt;}
+			input[type = text]{width : 200px ; height : 20px;}
+			textarea{width : 400px ; height : 200px;}
+		</style>
+		
+	</head>
+		
+	<body>
+	
+		<h1>회원 가입 화면</h1>
+		
+		<form action = "result.html" method = "post">
+		
+			<label for = "name"><span>이름:</span></label> <input type = "text" name = "name" id = "name"><br>
+			<label for = "address"><span>주소:</span></label> <input type = "text" name = "address" id = "address"><br>
+			<label for = "email"><span>email:</span></label> <input type = "text" name = "email" id = "email"><br>
+			
+			<input type = "radio" name = "gender" value = "male" id = "male"> <label for = "male"><span>Male</span></label><br>
+			<input type = "radio" name = "gender" value = "female" id = "female"> <label for = "female"><span>Female</span></label><br>
+			
+			<input type = "submit" value = "Send"> 
+			<input type = "reset" value = "원래대로">
+			
+		</form>
+		
+		
+	</body>
+</html>
