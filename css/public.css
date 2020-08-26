@@ -2,13 +2,21 @@
 
 .box{
 	background-color : #fef3f3;
-	font-size : 1.5em; 
+	font-size : 1.3em; 
 	padding : 10px;
 	margin : 5px;
 
 	border-top : 4px double blue;
 	border-bottom: 4px double blue;
 	
+}
+
+
+.box pre{
+	
+	font-size : 1.1em;
+	background-color : #d8d8d8;
+	margin : 5px;
 }
 
 
@@ -19,8 +27,6 @@
 	margin : 5px;
 	
 }
-
-
 
 
 .box #result1, .box .dd{
@@ -45,6 +51,9 @@
 	
 	
 }
+
+
+
 
 
 

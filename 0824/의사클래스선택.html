@@ -39,6 +39,7 @@
 			
 			table{
 				
+				border-collapse: collapse;
 			
 			}
 			
@@ -50,11 +51,11 @@
 			}
 			
 			tr:nth-child(even){
-				background : lightblue;
+				background : lightblue; 
 			}
 			
 			tr:nth-child(2n-1){
-				background : lightgray;
+				background : lightgray; 
 			}
 			
 			tr:nth-child(1){
@@ -81,6 +82,12 @@
 			}
 			
 			
+			caption{
+				margin : 20px auto;	
+				caption-side: bottom;
+				font-size : 1.5em;
+			}
+			
 			
 								
 		</style>
@@ -91,7 +98,6 @@
 	<body>
 		
 		<div class = "box">
-		
 			
 			<h3 title = "상태클래스">1.의사클래스</h3>
 			상태나 구조에 의한 선택이 이루어진다.<br>
@@ -128,12 +134,16 @@
 			
 			<input type = "button" value = "확인">
 			<br>
+			테투리 선 합치기 border-collapse : collapse; <br>
+			테이블 제목 &lt;caption&gt;vip리스트&lt;/caption&gt;
+			
 			<div id = "result1">
 			
 				
 				구조에 의한 선택 <br><br>
 				
 				<table border = "1">
+					<caption>VIP LIST</caption>
 					<tr>
 						<td>이름</td>
 						<td>주소</td>

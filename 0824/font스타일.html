@@ -5,29 +5,94 @@
 		<title>Insert title here</title>
 		<link href = "../css/public.css" rel = "stylesheet">
 		
+		<script type = "text/javascript">
+			
+		
+			window.onload = function(){  //document가 로드 되었을때 윈도우가 보일때, 실행된 화면이 보일때!
+				
+				vp = document.querySelectorAll("p");
+				//body가 생성되지 않았기 때문에, document가 존재하지 않는다.
+				//script가 아래로 가는 방법도 있는데, 기본적으로는 헤더안에 쓴다
+				
+			} 
+			
+		
+			function proc1() {
+				//div1안의 p태그를 선택
+				vp[0].style.color = "blue";
+			}
+			function proc2() {
+				//div2안의 p태그를 선택
+				vp[1].style.fontStyle = "italic";
+			}
+			function proc3() {
+				//div3안의 p태그를 선택
+				vp[2].style.fontWeight = "bold";
+			}
+			function proc4() {
+				//div4안의 p태그를 선택
+				vp[3].style.fontSize = "2.0em";
+			}
+			function proc5() {
+				//div5안의 p태그를 선택
+				vp[4].style.height = "400px";
+			}
+		
+		</script>
+				
+		
 	</head>
 
 	<body>
 
 		<div class = "box">
 		
+			javascript	: 기능부여
+			html요소로 접근 방법:
+				<pre>
+				document.getElementById('id이름') 
+				document.getElementsByTagName('Tag이름') 
+				document.getElementsByClassName('Class이름')
+				
+				document.querySelector('#id이름')
+				document.querySelector('.class이름') 
+				document.querySelector('태그이름')        <!-- 얘네는 복수의 값들 중 처음값만 가져온다 -->
+				
+				document.querySelectorAll('.class이름')
+				document.querySelectorAll('태그이름')     <!-- 그래서 뒤에 All을 붙여서 사용한다 -->
+				
+				
+				vp = document.querySelectorAll('p');
+				
+				</pre>
+				
 			<h3>font style</h3>
 			<div class = "dd" id = "div1">
-				고등어 태비 고양이로 얼굴에 하얀 부분이 많고 입가에 노란 점이 있다. 
+				<input type = "button" value = "확인"  onclick = "proc1()"> 
+				<h2>vp[0].style.color = 'blue';</h2>
+				<p>고등어 태비 고양이로 얼굴에 하얀 부분이 많고 입가에 노란 점이 있다. </p>
 			</div>
 			<div class = "dd" id = "div2">
-				다른 양어장의 고등어 태비 고양이들보다 회색깔의 톤이 웜톤에 가깝다.
+				<input type = "button" value = "확인"  onclick = "proc2()">
+				<h2>vp[1].style.fontStyle = 'italic';</h2>
+				<p>다른 양어장의 고등어 태비 고양이들보다 회색깔의 톤이 웜톤에 가깝다.</p>
 			</div>
 			<div class = "dd" id = "div3">
-				특유의 뚱한 표정으로 많은 인기를 끌고 있지만 표정을 제대로 지을 때는 상당히 잘생겼다. 
+				<input type = "button" value = "확인"  onclick = "proc3()">
+				<h2>vp[2].style.fontWeight = 'bold';</h2>
+				<p>특유의 뚱한 표정으로 많은 인기를 끌고 있지만 표정을 제대로 지을 때는 상당히 잘생겼다. </p>
 			</div>
 			<div class = "dd" id = "div4">
-				양어장의 고양이들 중에서 가장 순하며, QnA에 따르면 여러 고양이들과 두루 친한 편이라고 한다. 
+				<input type = "button" value = "확인"  onclick = "proc4()">
+				<h2>vp[3].style.fontSize = '2.0em';</h2>
+				<p>양어장의 고양이들 중에서 가장 순하며, QnA에 따르면 여러 고양이들과 두루 친한 편이라고 한다. </p>
 			</div>
-			<div class = "dd" id = "div4">
-				실제로 뚱땅이 같이 아예 외부에서 살던 고양이가 들어온 게 아니라면 어떤 고양이에게도 먼저 싸움을 걸거나 하악질을 하지 않는다.
+			<div class = "dd" id = "div5">
+				<input type = "button" value = "확인"  onclick = "proc5()">
+				<h2>vp[4].style.height = '400px';</h2>
+				<p>실제로 뚱땅이 같이 아예 외부에서 살던 고양이가 들어온 게 아니라면 어떤 고양이에게도 먼저 싸움을 걸거나 하악질을 하지 않는다.</p>
 			</div>
-		
+			
 		</div>
 
 		

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		
+		<link href = "../css/public.css" rel ="stylesheet">
+		
+		
+		<script>
+			
+			window.onload = function(){
+				
+				vp = document.getElementsByTagName("p");
+				
+			}
+		
+			function proc1() {
+				
+			}		
+			function proc2() {
+				vp[1].style.letterSpacing = "10px";
+			}		
+			function proc3() {
+				vp[2].style.lineHeight = "60px";
+			}		
+			function proc4() {
+				vp[3].style.textAlign = "right";
+			}		
+			function proc5() {
+				vp[4].style.textDecoration = "underline";
+			}		
+			function proc6() {
+				vp[5].style.textIndent = "70px";
+			}		
+		
+		</script>
+		
+	</head>
+
+	<body>
+		<div class = "box">
+			
+			<h3>font style</h3>
+			<div class = "dd" id = "div1">
+				<input type = "button" value = "확인"  onclick = "proc1()"> 
+				<p>고등어 태비 고양이로 얼굴에 하얀 부분이 많고 입가에 노란 점이 있다. </p>
+			</div>
+			<div class = "dd" id = "div2">
+				<input type = "button" value = "확인"  onclick = "proc2()">
+				<h2>vp[1].style.letterSpacing = "10px";</h2>
+				<p>다른 양어장의 고등어 태비 고양이들보다 회색깔의 톤이 웜톤에 가깝다.</p>
+			</div>
+			<div class = "dd" id = "div3">
+				<input type = "button" value = "확인"  onclick = "proc3()">
+				<h2>vp[2].style.lineHeight = "60px";</h2>
+				<p>특유의 뚱한 표정으로 많은 인기를 끌고 있지만 <br>표정을 제대로 지을 때는 상당히 잘생겼다. </p>
+			</div>
+			<div class = "dd" id = "div4">
+				<input type = "button" value = "확인"  onclick = "proc4()">
+				<h2>vp[3].style.textAlign = "right";</h2>
+				<p>양어장의 고양이들 중에서 가장 순하며, QnA에 따르면 여러 고양이들과 두루 친한 편이라고 한다. </p>
+			</div>
+			<div class = "dd" id = "div5">
+				<input type = "button" value = "확인"  onclick = "proc5()">
+				<h2>vp[4].style.textDecoration = "underline";</h2>
+				<p>실제로 뚱땅이 같이 아예 외부에서 살던 고양이가 들어온 게 아니라면 어떤 고양이에게도 먼저 싸움을 걸거나 하악질을 하지 않는다.</p>
+			</div>
+			<div class = "dd" id = "div6">
+				<input type = "button" value = "확인"  onclick = "proc6()">
+				<h2>vp[5].style.textIndent = "70px";</h2>
+				<p>귀여운 무</p>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

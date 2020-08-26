@@ -1,0 +1,569 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- 2018.04.16 -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<!-- 2018.04.16 -->
+<meta name="format-detection" content="telephone=no">
+<meta name="Author" content="기획재정부 어린이 경제교실" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<meta property="og:title" content="" />
+<meta property="og:image" content="/images/common/kidsogmi.png" />
+<meta property="og:description" content="">
+<title>기획재정부 어린이 경제교실</title>
+<!-- 2018.04.16 -->
+<!-- 2018.04.16 -->
+
+<script src="/js/jquery.js"></script>
+<script src="/js/plugins/smoothscroll.min.js"></script>
+<!-- 2018.04.16 -->
+<script src="/js/common.js"></script>
+<!-- 2018.04.16 -->
+<!--[if lt IE 9]>	
+	<script src="/js/ie/html5shiv.min.js"></script>
+	<script src="/js/ie/css3-mediaqueries.js"></script>
+	<script src="/js/ie/IE9.js"></script>
+	<script src="/js/ie/placeholders.min.js"></script>	
+<![endif]-->
+
+</head>
+<body id="page-top" data-spy="scroll">
+<div id="wrapper">
+	
+
+<!-- 2018.04.16 -->
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+<!-- 2018.04.16 -->
+<link rel="stylesheet" type="text/css" href="/css/new410_common.css" />
+<!-- 2018.04.16 -->
+<link rel="stylesheet" type="text/css" href="/css/media.css" />
+<!-- 2018.04.16 -->
+<!--begin header -->
+<!--begin header -->
+<header id="header">
+	<div class="container">
+		<div class="glb-nav">
+			<a class="child-home" href="/main.do" title="홈(처음으로) 이동"><img src="/images/common/glb-n01-active.gif" alt="홈(처음으로)" /></a>
+			<div class="navAll" title="전체메뉴 창 열기"><img src="/images/common/glb-n02.gif" alt="전체메뉴" /></div>
+			<a class="scr-taegugki" href="#link" onclick="taegugkiOpen();" title="국가상징 알아보기(새창열기)"><img src="/images/common/main-flag.png" alt="국가상징 알아보기" /></a>
+			<a class="scr-prt" href="#link" onclick="window.print();" title="화면인쇄"><img src="/images/common/glb-print.png" alt="프린트" /></a>
+			<!--============2018-4-10================-->
+			<div class="scr-cntl-ne2">
+				<a href="http://www.moef.go.kr/" target="_blank" title="새창열림">기획재정부</a>
+			</div>
+			<!--//============//2018-4-10================-->
+			<div class="scr-cntl">
+				<a href="#link" onclick="zoomIn();" title="화면축소"><img src="/images/common/glb-minus.png" alt="화면축소" /></a>
+				<a class="reset" href="#link" onclick="zoomReset();">기본</a>
+				<a href="#link" onclick="zoomOut();" title="화면확대"><img src="/images/common/glb-plus.png" alt="화면확대" /></a>
+			</div>
+		</div>
+		<h1><a href="/main.do" title="어린이 경제교실"><img src="/images/common/mosf-mi.png" alt="어린이 경제교실" /></a></h1>
+		<nav>
+			<a href="/intro/weIntro.do" title="우리를 소개해요 바로가기"><img src="/images/menu1.gif" alt="우리를 소개해요" /></a>
+			<a href="/class/intrstClass.do" title="즐거운 경제교실 바로가기"><img src="/images/menu2.gif" alt="즐거운 경제교실" /></a>
+			<a href="/play/scolar.do" title="경제야 놀자! 바로가기"><img src="/images/menu3.gif" alt="경제야 놀자!" /></a>
+			<a href="/news/rescRoomList.do?boardCd=RR001" title="함께하는 경제소식 바로가기"><img src="/images/menu4.gif" alt="함께하는 경제소식"/></a>
+		</nav>
+		<!-- 2018.04.16 -->
+		<div class="mob_meun_open"><a href="#a"><img src="/images/common/glb-n02.gif" alt="전체메뉴"></a></div>
+		<div id="mob_meun">
+			<div class="mob_meun">
+				<div class="mob_meun_top">
+					<p>전체메뉴</p>
+					<a class="mob_meun_close" href="#a"><img src="/images/april_img3.gif" alt=""></a>
+				</div>
+				<ul class="mob_meun01">
+					<li class="bg1"><a href="#">우리를 소개해요</a>
+						<ul class="mob_meun02">
+							<li><a href="/intro/weIntro.do#section01">만나서 반가워요</a></li>
+							<li><a href="/intro/weIntro.do#section02">무슨 일을 할까요?</a></li>
+							<li><a href="/intro/weIntro.do#section03">우리를 소개해요</a></li>
+							<li><a href="/intro/weIntro.do#section04">우리의 얼굴이에요</a></li>
+							<li><a href="/intro/weIntro.do#section05">이렇게 발전했어요</a></li>
+							<li><a href="/intro/weIntro.do#section06" >어디에 있나요?</a></li>
+						</ul>
+					</li>
+					<li class="bg2"><a href="#">즐거운 경제교실</a>
+						<ul class="mob_meun02">
+							<li><a href="/class/intrstClass.do#section01">현명한 경제지식을 배워요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">우리에게 꼭 필요해요</a></li>
+									<li><a href="#">둘 중에 하나만 선택해요</a></li>
+									<li><a href="#">서로 원하는 물건을 바꿔요</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section02">시장속에 경제가 숨어있어요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">시장에 대해 알아보아요</a></li>
+									<li><a href="#">가격은 어떻게 정해지나요?</a></li>
+									<li><a href="#">경쟁을 왜 하나요?</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section03">우리집에도 경제가 있어요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">소비란 무엇인가요?</a></li>
+									<li><a href="#">저축하는 습관을 가져요</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section04">금융과 신용은 친구에요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">금융이 빌려 드려요</a></li>
+									<li><a href="#">신용은 무엇인가요?</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section05">기업속에 경제가 숨어있어요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">기업에서 무슨 일을 할까요?</a></li>
+									<li><a href="#">생산이란 무슨 뜻인가요?</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section06">우리나라 경제를 살펴보아요</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">우리나라는 잘사는 나라에요?</a></li>
+									<li><a href="#">경제가 힘들면 안돼요</a></li>
+								</ul> -->
+							</li>
+							<li><a href="/class/intrstClass.do#section07">정부는 어떤일을 할까요?</a>
+<!-- 								<ul class="mob_meun03">
+									<li><a href="#">공정한 경쟁을 도와줘요</a></li>
+									<li><a href="#">살기 좋은 나라를 만들어요</a></li>
+								</ul> -->
+							</li>
+						</ul>
+					</li>
+					<li class="bg3"><a href="#">경제야 놀자!</a>
+						<ul class="mob_meun02">
+							<li><a href="#">경제학자를 소개해요</a>
+								<ul class="mob_meun03">
+									<li><a href="/play/scolar.do">고전학파</a></li>
+									<li><a href="/play/limit.do">한계효용학파</a></li>
+									<li><a href="/play/keins.do">게인즈학파</a></li>
+									<li><a href="/play/currency.do">통화주의파</a></li>
+								</ul>
+							</li>
+							<li><a href="/play/ecnmyWordList.do?boardCd=EW001">경제 핵심개념을 알아보아요</a></li>
+							<!-- <li><a href="/play/mySkill.do">나의 실력을 뽐내보세요</a></li> -->
+						</ul>
+					</li>
+					<li class="bg4"><a href="#">함께하는 경제소식</a>
+						<ul class="mob_meun02">
+							<li><a href="/news/rescRoomList.do?boardCd=RR001">알찬 정보가 있어요</a></li>
+							<li><a href="/news/mvpStdList.do?boardCd=MS001">동영상으로 경제공부해요</a></li>
+							<li><a href="/news/prftbLink.do">유익한 곳이에요</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 2018.04.16 -->
+	</div>
+</header>
+
+<div id="sitemap-wrap">
+	<map id="allNav" name="allNav">
+	  <area title="만나서 반가워요" shape="rect" coords="74,101,180,122" href="/intro/weIntro.do#section01" alt="만나서 반가워요" />
+	  <area title="무슨 일을 할까요?" shape="rect" coords="73,132,191,156" href="/intro/weIntro.do#section02" alt="무슨 일을 할까요?" />
+	  <area title="우리를 소개해요" shape="rect" coords="72,166,183,188" href="/intro/weIntro.do#section03" alt="우리를 소개해요" />
+	  <area title="우리의 얼굴이에요" shape="rect" coords="75,201,195,222" href="/intro/weIntro.do#section04" alt="우리의 얼굴이에요" />
+	  <area title="이렇게 발전했어요" shape="rect" coords="74,234,192,256" href="/intro/weIntro.do#section05" alt="이렇게 발전했어요" />
+	  <area title="어디에 있나요?" shape="rect" coords="75,267,174,289" href="/intro/weIntro.do#section06" alt="어디에 있나요?" />
+	  <area title="현명한 경제지식을 배워요" shape="rect" coords="316,101,475,122" href="/class/intrstClass.do#section01" alt="현명한 경제지식을 배워요" />
+	  <area title="시장속에 경제가 숨어있어요" shape="rect" coords="316,195,489,217" href="/class/intrstClass.do#section02" alt="시장속에 경제가 숨어있어요" />
+	  <area title="우리집에도 경제가 있어요" shape="rect" coords="317,280,474,302" href="/class/intrstClass.do#section03" alt="우리집에도 경제가 있어요" />
+	  <area title="기업속에 경제가 숨어있어요" shape="rect" coords="317,425,490,445" href="/class/intrstClass.do#section04" alt="기업속에 경제가 숨어있어요" />
+	  <area title="금융과 신용은 친구예요" shape="rect" coords="316,351,463,374" href="/class/intrstClass.do#section05" alt="금융과 신용은 친구예요" />
+	  <area title="우리나라 경제를 살펴보아요" shape="rect" coords="315,494,490,517" href="/class/intrstClass.do#section06" alt="우리나라 경제를 살펴보아요" />
+	  <area title="정부는 어떤 일을 할까요?" shape="rect" coords="317,562,472,585" href="/class/intrstClass.do#section07" alt="정부는 어떤 일을 할까요?" />
+	  <area title="경제학자를 소개해요" shape="rect" coords="569,100,701,123" href="/play/scolar.do" alt="경제학자를 소개해요" />
+	  <area title="경제 핵심개념을 알아보아요" shape="rect" coords="568,214,714,239" href="/play/ecnmyWordList.do?boardCd=EW001" alt="경제 핵심개념을 알아보아요" />
+	  <!-- <area title="나의 실력을 뽐내보세요" shape="rect" coords="570,258,715,281" href="/play/mySkill.do" alt="나의 실력을 뽐내보세요" /> -->
+	  <area title="알찬 정보가 있어요" shape="rect" coords="788,101,918,123" href="/news/rescRoomList.do?boardCd=RR001" alt="알찬 정보가 있어요" />
+	  <area title="동영상으로 경제공부해요" shape="rect" coords="788,135,910,159" href="/news/mvpStdList.do?boardCd=MS001" alt="동영상으로 경제공부해요" />
+	  <area title="유익한 곳이에요" shape="rect" coords="788,167,893,188" href="/news/prftbLink.do" alt="유익한 곳이에요" />
+	  <area title="창닫기" class="siteClose" shape="rect" coords="975,5,1040,71" href="#" alt="창닫기" />
+	</map>
+	<img src="/images/content/sitemap1.png" alt="사이트맵" usemap="#allNav" />
+</div>
+
+<script>
+var nowZoom = 1;
+function zoomIn() {
+	nowZoom /= 1.05;
+	zooms(nowZoom);
+}
+function zoomOut() {
+	nowZoom *= 1.07;
+	zooms(nowZoom);
+}
+function zoomReset(){
+	document.location.reload(true);
+}
+function zooms(nowZoom){
+	document.body.style.zoom = nowZoom;
+}
+var taegugkiOpen = function(){
+	var popUrl = 'http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do'; //팝업창에 출력될 페이지 URL
+	var popOption = 'width=888, height=723, resizable=no, scrollbars=no, status=no'; //팝업창 옵션
+	window.open(popUrl, popOption);
+};
+
+$(function(){
+	$('.navAll').click(function(){
+		$('#sitemap-wrap').slideToggle();
+	});
+	$('.siteClose').click(function(){
+		$('#sitemap-wrap').fadeOut('slow');
+	});
+});
+</script>
+
+	
+
+
+<script>
+
+	function goToPage(URLInfo){
+		var actForm = document.getElementById("mainForm");
+		actForm.action = URLInfo;
+		actForm.submit();
+	}
+	
+	function openPopup() {
+		var date = new Date();
+		var getMonth = date.getMonth();
+		var getDate = date.getDate();
+		var getHours = date.getHours();
+		var getMinute = date.getMinutes();
+		var getSecond = date.getSeconds();
+		var newMonth="";
+		var newDate="";
+		var newHours="";
+		var newMinute="";
+		var newSecond="";
+		
+		if(getMonth<9){
+			newMonth= "0"+(getMonth+1);
+		}else{
+			newMonth = getMonth+1;
+		}
+		if(getDate<10){
+			newDate= "0"+getDate;
+		}else{
+			newDate = getDate;
+		}
+		if(getHours<10){
+			newHours= "0"+getHours;
+		}else{
+			newHours = getHours;
+		}
+		if(getMinute<10){
+			newMinute= "0"+getMinute;
+		}else{
+			newMinute = getMinute;
+		}
+		if(getSecond<10){
+			newSecond= "0"+getSecond;
+		}else{
+			newSecond = getSecond;
+		}
+		date2 = date.getFullYear()+""+newMonth+""+newDate+""+newHours+""+newMinute+""+newSecond;
+		date2=date2*1;
+		/* if(date2 > 20181204090000 && date2 <= 20181217235959){
+			if(!getCookie("jpop2018")) {
+				// 팝업 창 제어
+		  	    window.open('/popup/pop_20180209.jsp','jpop2018', 'toolbar=no,status=no,width=550,height=710,top=50,left=50,padding=0');
+		  	}
+		}*/
+/* 		if(date2 <= 20181217235959){
+			if(!getCookie("jpop2018")) {
+				// 팝업 창 제어
+				window.open('/popup/pop_20181217.jsp','jpop2018', 'toolbar=no,status=no,width=450,height=640,top=50,left=50,padding=0');
+		  	}
+		} */
+	}
+
+	function getCookie(cName) {
+	    cName = cName + '=';
+	    var cookieData = document.cookie;
+	    var start = cookieData.indexOf(cName);
+	    var cValue = '';
+	    if(start != -1){
+	        start += cName.length;
+	        var end = cookieData.indexOf(';', start);
+	        if(end == -1)end = cookieData.length;
+	        cValue = cookieData.substring(start, end);
+	    }
+	    return unescape(cValue);
+	}
+	
+	$(document).ready(function(){
+		openPopup();
+	});
+</script>
+
+<form id="mainForm" name="mainForm" action="/;jsessionid=IW0lbF2kpiSvii9b4FL-8l5M.mosfkid" method="post">
+<!-- 2018.04.16 -->
+<div id="container" class="container main_center"><!-- 2018.04.16 -->
+	<section class="eco-up">
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section03'">	
+			<div class="flipper eco01">			
+				<div class="front">			
+					<h2><span>우리 집</span>에도 <span>경제</span>가<br />있어요</h2>
+					<figure><img src="/images/content/main-c011.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>우리 집</span>에도 <span>경제</span>가<br />있어요</h3>
+					<figure><img src="/images/content/main-c012.png" alt="" /></figure>
+					<ul>
+						<li>우리에게 꼭 필요해요</li>
+						<li>둘 중에 하나만 선택해요</li>
+						<li>서로 원하는 물건을 바꿔요</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section02'">
+			<div class="flipper eco02">
+				<div class="front">			
+					<h2><span>시장</span>속에 <span>경제</span>가<br />숨어있어요</h2>
+					<figure><img src="/images/content/main-c21.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>시장</span>속에 <span>경제</span>가<br />숨어있어요</h3>
+					<figure><img src="/images/content/main-c22.png" alt="" /></figure>
+					<ul>
+						<li>시장에 대해 알아보아요</li>
+						<li>가격은 어떻게 정해지나요?</li>
+						<li>경쟁을 왜 하나요?</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section04'">
+			<div class="flipper eco03">
+				<div class="front">			
+					<h2><span>기업</span>속에 <span>경제</span>가<br />숨어있어요</h2>
+					<figure><img src="/images/content/main-c31.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>기업</span>속에 <span>경제</span>가<br />숨어있어요</h3>
+					<figure><img src="/images/content/main-c32.png" alt="" /></figure>
+					<ul>
+						<li>기업에서 무슨 일을 할까요?</li>
+						<li>생산이란 무슨 뜻인가요?</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section06'">
+			<div class="flipper eco04">
+				<div class="front">			
+					<h2><span>우리나라 경제</span>를<br />살펴보아요</h2>
+					<figure><img src="/images/content/main-c41.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>우리나라 경제</span>를<br />살펴보아요</h3>
+					<figure><img src="/images/content/main-c42.png" alt="" /></figure>
+					<ul>
+						<li>우리나라는 잘사는 나라예요?</li>
+						<li>경제가 힘들면 안돼요</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 2018.04.16 -->
+	<section class="eco-intro">
+		<h2>세계속 경제학자를 소개합니다</h2>
+		<ul>
+			<li title="고전학파 바로가기"><a href="/play/scolar.do"><img src="/images/content/main-i01.png" alt="고전학파" /></a></li>
+			<li title="한계효용학파 바로가기"><a href="/play/limit.do"><img src="/images/content/main-i02.png" alt="한계효용학파" /></a></li>
+			<li title="케인즈학파 바로가기"><a href="/play/keins.do"><img src="/images/content/main-i03.png" alt="케인즈학파" /></a></li>
+			<li title="통화주의파 바로가기"><a href="/play/currency.do"><img src="/images/content/main-i04.png" alt="통화주의파" /></a></li>
+		</ul>
+	</section>
+	<div class="eco-layer">
+		<a href="/news/mvpStdList.do?boardCd=MS001" title="전지적미래시점ㆍ경제사평행이론 바로가기">
+			<div class="img">
+				<img class="mob_none" src="./images/april_img1_1.png" alt="전지적미래시점ㆍ경제사평행이론">
+				<img class="mob_block" src="./images/april_img2_1.png" alt="전지적미래시점ㆍ경제사평행이론">
+			</div>
+			<div class="fonts">
+				<ul>
+					<li>인기 연예인과 함께 만든 경제교육영상물이<br /><strong>매주 2편씩 게시될 예정</strong>이니 많은관심 부탁드려요.</li>
+				</ul>
+			</div>
+		</a>
+	</div>
+	<!-- 2018.04.16 -->
+
+	<section class="eco-down">
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section05'">
+			<div class="flipper eco05">
+				<div class="front">			
+					<h2><span>금융</span>과 <span>신용</span>은<br />친구예요</h2>
+					<figure><img src="/images/content/main-c51.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>금융</span>과 <span>신용</span>은<br />친구예요</h3>
+					<figure><img src="/images/content/main-c52.png" alt="" /></figure>
+					<ul>
+						<li>금융이 빌려드려요</li>
+						<li>신용은 무엇인가요?</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section07'">
+			<div class="flipper eco06">
+				<div class="front">			
+					<h2><span>정부</span>는 <span>어떤 일</span>을<br />할까요?</h2>
+					<figure><img src="/images/content/main-c61.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>정부</span>는 <span>어떤 일</span>을<br />할까요?</h3>
+					<figure><img src="/images/content/main-c62.png" alt="" /></figure>
+					<ul>
+						<li>공정한 경쟁을 도와줘요</li>
+						<li>살기 좋은 나라를 만들어요</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="flip-container" onclick="parent.location='/class/intrstClass.do#section01'">
+			<div class="flipper eco07">
+				<div class="front">			
+					<h2><span>현명한 경제지식</span>을<br />배워요</h2>
+					<figure><img src="/images/content/main-c71.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>현명한 경제지식</span>을<br />배워요</h3>
+					<figure><img src="/images/content/main-c72.png" alt="" /></figure>
+					<ul>
+						<li>우리에게 꼭 필요해요</li>
+						<li>둘 중에 하나만 선택해요</li>
+						<li>서로 원하는 물건을 바꿔요</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<!-- 		이벤트 배너 -->
+
+<!-- 		<div class="event-wrap" onclick="childEvent();" title="이벤트 참여하기(새창으로 열림)"> -->
+<!-- 			<span></span> -->
+<!-- 		</div> -->
+
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');" onclick="location.href='/play/ecnmyWordList.do?boardCd=EW001'">
+			<div class="flipper eco08">
+				<div class="front">			
+					<h2><span>경제 핵심개념</span>을<br />알아보아요</h2>
+					<figure><img src="/images/content/main-c81.png" alt="" /></figure>
+				</div>
+				<div class="back">
+					<h3><span>경제 핵심개념</span>을<br />알아보아요</h3>
+					<figure><img src="/images/content/main-c82.png" alt="" /></figure>
+					<ul>
+						<li>경제용어 알면 나도 지식인!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+</form>
+
+<script>
+function childEvent (){
+	window.open('https://www.facebook.com/mosfkorea/posts/1119458494806144', '_blank');
+}
+function leadingZeros(n, digits) {
+  var zero = '';
+  n = n.toString();
+
+  if (n.length < digits) {
+    for (var i = 0; i < digits - n.length; i++)
+      zero += '0';
+  }
+  return zero + n;
+}
+$(document).ready(function() {
+    var flipped=false;
+    
+    $('.card').on('mouseover', function(){
+    	if(!flipped){
+   			$(this).find($('.back')).css('transform','rotateY(0deg)');
+   			$(this).find($('.front')).css('transform','rotateY(180deg)');
+   			flipped=true;
+   			console.log('true part :'+flipped);	    				
+      	} else {
+      		$(this).find($('.back')).css('transform','rotateY(180deg)');
+      		$(this).find($('.front')).css('transform','rotateY(0deg)');
+			flipped=false;
+			console.log('else part :'+flipped);
+		}
+    });
+    
+// 	현재 날짜
+    var date = new Date();
+    
+    var y = date.getFullYear()+"";
+    var M = date.getMonth()+1;
+    var d = date.getDate();
+    var h = leadingZeros(date.getHours(),2);
+    var m = leadingZeros(date.getMinutes(),2);
+    var s = leadingZeros(date.getSeconds(),2);
+    var now = y+M+d+h+m+s;
+    now = now * 1;
+
+//  팝업기간 설정
+    if(now >= 20161130090000 && now <= 20161204235959){    	
+	    window.open("surveyResult.jsp","event2","width=398px,height=513px,scrollbars=1");
+    }   
+});
+</script>
+
+<!-- LOGGER(TM) CLICKZONE(TM) SCRIPT ver.FR02 -->
+<!-- COPYRIGHT (C) 2002-2017 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
+<!-- DO NOT MODIFY THIS SCRIPT. -->
+<script type="text/javascript">
+var _CZ_U = 52539;
+var _CZ_HTTP_HOST = "ssl.logger.co.kr";  var _CZ_HTTPS_HOST = "ssl.logger.co.kr";
+var _CZ_HOST=document.location.protocol.indexOf("https")!=-1?"https://"+_CZ_HTTPS_HOST:"http://"+_CZ_HTTP_HOST;
+var _CZ_DU=encodeURIComponent(self.document.location.href);
+var _CZ_CC=_trk_getCookieCZ("_TRK_CC");
+var _CZ_IMG=new Image();
+var _CZ_URL=".";
+function _trk_getCookieCZ(name){var cookieName=name+"="; var x=0; while(x<=document.cookie.length) { var y=(x+cookieName.length); if(document.cookie.substring(x,y)==cookieName) {if((endOfCookie=document.cookie.indexOf(";",y))==-1) endOfCookie=document.cookie.length;  return unescape(document.cookie.substring(y,endOfCookie)); } x=document.cookie.indexOf(" ",x)+1; if(x == 0) break; } return "";} function _cz_getposition(obj) {var pos = new Object; pos.x = 0; pos.y = 0;	if( obj ) { pos.x = obj.offsetLeft;  pos.y = obj.offsetTop;  }      return pos;  } function _cz_iframe_mouseClick(i_ax,i_ay,iframeName) {	var iframeTop = 0 , iframeLeft = 0 ,px=0;	if(typeof(window.innerWidth)=='number'){ww=window.innerWidth;}else if(document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)){ww=document.documentElement.clientWidth;}else if(document.body && (document.body.clientWidth || document.body.clientHeight)){ww=document.body.clientWidth;}	if(iframeName){var ppos = _cz_getposition(document.all[iframeName]); iframeTop =  ppos.x;	iframeLeft =  ppos.y;}	c_ax =  iframeTop+ i_ax; c_ay = iframeLeft+ i_ay;rx=Math.round(c_ax-ww/2);px=Math.round(c_ax/ww*100); _CZ_IMG.src=_CZ_HOST+"/tracker_czn.tsp?u="+_CZ_U+"&czIdx=11593&ax="+c_ax+"&ay="+c_ay+"&rx="+rx+"&px="+px+"&ww="+ww+"&CC="+_CZ_CC;} function _cz_mouseClick(e) { if(document.location.href.indexOf(_CZ_URL)<0) return; var ax,ay,rx ; if(!e) var e=window.event; var _scrOfX = 0;  var _scrOfY = 0;if( document.body && ( document.body.scrollLeft || document.body.scrollTop)) {_scrOfY = document.body.scrollTop ;_scrOfX = document.body.scrollLeft;}else if( document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop)) {_scrOfY = document.documentElement.scrollTop;_scrOfX = document.documentElement.scrollLeft ;}ax=e.clientX+ _scrOfX;ay=e.clientY+ _scrOfY;_cz_iframe_mouseClick(ax,ay,""); } if(window.addEventListener)document.addEventListener('mousedown',_cz_mouseClick,false);else document.attachEvent('onmousedown',_cz_mouseClick);
+</script>
+<!-- END OF LOGGER(TM) CLICKZONE(TM) SCRIPT -->
+	
+    
+<!--begin footer-->
+<div id="footer">
+	<div class="container">
+		<h2><img src="/images/common/footer_mi.png" alt="기획재정부 MI" /></h2>
+		<address>30109 세종특별자치시 갈매로 477 정부세종청사 기획재정부 (대표전화 044-215-2114)</address>
+		<p class="copy">Copyright ⓒ Ministry of Economy and Finance.</p>
+	</div>
+</div>
+<!--end footer-->
+</div>
+<!-- LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 52539 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<script type="text/javascript">var _TRK_LID="52539";var _L_TD="ssl.logger.co.kr";var _TRK_CDMN="";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://fs.bizspring.net" : "http://fs.bizspring.net";
+(function(b,s){var f=b.getElementsByTagName(s)[0],j=b.createElement(s);j.async=true;j.src='//fs.bizspring.net/fs4/bstrk.1.js';f.parentNode.insertBefore(j,f);})(document,'script');</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://ssl.logger.co.kr/tracker.tsp?u=52539&amp;js=N" /></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+</body>
+</html>
