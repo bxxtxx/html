@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link href = "../css/public.css" rel = "stylesheet">
+	
+		<style>
+			
+			span{
+				background : yellow;
+				display : inline-block;
+				width : 50%;
+				height: 100px;
+			}
+			
+			p{
+				background : pink;
+				width : 50%;
+				height: 60px;
+			}			
+			
+			.box #result1{
+				display : none;
+			}
+			
+		</style>		
+		
+		<script>
+			
+ 			window.onload = function() {
+ 				//id가 result1인 요소를 검색
+ 				res1 = document.getElementById("result1");			
+ 						
+				
+ 				//변수앞에 var를 붙이면 지역변수가 된다.
+ 				
+ 				//span태그와 p태그 검색
+				vsp = document.getElementsByTagName("span");
+				vp = document.getElementsByTagName("p");
+			}
+		
+ 	
+			function proc1() {
+				res1.style.display = "block";
+				vsp[0].style.display = "none";
+				vp[0].style.display = "none";
+			}
+			
+			function proc2() {
+				res1.style.display = "none";
+				vsp[0].style.display = "inline-block";
+				vp[0].style.display = "block";
+			}
+			
+		</script>
+		
+	</head>
+
+	<body>
+		<div class = "box">
+			<h3>display</h3>
+			display : none<br>
+			display : block<br>
+			display : inline<br>
+			display : inline-block<br>
+			
+			확인버튼 클릭하면 div id = result1인 요소를 보이게 하고<br>
+			span p태크는 안보이게 한다. <br>
+			
+			<input type = "button" value = "확인" onclick = "proc1()">
+			<input type = "button" value = "확인" onclick = "proc2()">
+			<span>무궁화 꽃이 피었습니다.</span>
+			<p>무궁화 꽃이 피었습니다.</p>
+			<div id = "result1"></div>
+		
+		</div>
+	</body>
+</html>

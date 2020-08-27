@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link href = "../css/public.css" rel = "stylesheet">
+		
+		<style>
+			
+			.box div{
+				width : 200px;
+				height: 100px;
+				margin: 50px;
+				padding: 20px;
+				border : 2px solid orange;
+			}
+			
+			.box .res{
+				border : 2px solid blue;
+			}
+			
+			#res2{
+				position: relative;
+				top: 100px;
+				left : 100px;
+			}
+			
+			#res3{
+				position: absolute;
+				top: 300px;
+				left : 300px; /* 왼쪽에서 부터 300px */
+			}
+			
+			#fixed{
+				position: fixed;
+				right : 50px;      /* 오른쪽에서부터 50px */
+				top: 500px;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>
+		<div class = "box">
+			<h3>위치설정</h3>
+			<div>res</div>
+			<div>res</div>
+			<div id = "fixed">
+				position: fixed;<br>
+				right : 50px;<br>
+				top: 500px;
+			</div>
+			<div>res</div>
+			<hr>
+			
+			<div class = "res" id = "res1">res1</div>
+			<div class = "res" id = "res2">
+				position: relative;<br>
+				top: 100px;<br>
+				left : 100px;
+			</div>
+			<div class = "res" id = "res3">
+				position: absolute;<br>
+				top: 300px;<br>
+				left : 300px; </div>
+			<div class = "res" id = "res4">res4</div>
+			<div class = "res" id = "res5">res4</div>
+			<div class = "res" id = "res6">res4</div>
+			<div class = "res" id = "res7">res4</div>
+			<div class = "res" id = "res8">res4</div>
+						
+		</div>
+		<pre>
+		정적위치 : 정삭적인 흐름에 따라서 배치된다
+		상대위치 : 정삭적인 흐름의 위치에서 변경한다
+		절대위치 : 윈도우 컨테이너의 시작점에서 위치를  조절한다
+		고정위치 : 윈도우 컨테이너의 시작점에서 위치를  조절한다
+		               화면이 scroll되어도 항상 고정된 위치로 존재한다.
+		</pre>
+	</body>
+</html>
