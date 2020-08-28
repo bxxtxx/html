@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link href = "mystyle.css" rel = "stylesheet">
+		
+		<style>
+		
+			header{
+				width: 100%;
+				height: 60px;
+				background: black;
+				margin-bottom: 10px;
+				padding : 5px;
+				text-align: center;
+			}
+			
+			header h2{
+				color : white;
+				margin : 10px;
+			}
+			
+			
+			
+			nav{
+				border-top : 2px solid black;
+				border-bottom : 2px solid black;
+				width: 1280px;
+				height : 50px;
+				margin: 0 auto;
+			}
+			
+			nav ul{
+				width: 1280px;
+				height: 25px;
+				margin: 0 auto;
+			}
+			
+			nav li{
+				width : 100px;
+				height : 25px;
+				margin : 10px 45px; 
+				float : left;
+				list-style-type: none;
+			}
+			
+			nav li h3:hover{
+				color : orange;
+			}
+			
+		
+			
+			#profile{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%; 
+			}
+			
+			#skin{
+				background-image: url(../img/footprint.png);
+				background-repeat: no-repeat;
+				height: 1280px;
+			}
+			
+			aside{
+				border : 1px solid red;
+				width : 20%;
+				border : 1px solid #D9D9D9;
+				border-radius : 10px;
+				background : white;
+				padding : 10px 0px;
+				float : left;
+			}
+			
+			aside .pro01{
+				text-align : center;
+			}
+			
+			
+			section{
+				width: 57%;
+				float : left;
+				margin: 0px 15px 50px;
+				background : #D9D9D9;
+				border-radius : 10px;
+			}
+			
+			#skeleton{
+				width: 1280px;
+				height : 100%;
+				margin: 40px auto;
+			}
+			
+			
+			footer{
+				clear : both;
+				margin : 0px auto;
+				height: 60px;
+				width : 1280px;
+				background : black;
+				border-radius : 5px;
+			}
+			
+			iframe{
+				width: 100%;
+				height: 500px;
+				border : none;
+			}
+			
+			#register{
+				padding : 20px;
+				text-align: left;
+				margin-left: 17px;
+			}
+			
+			#register h5{
+				margin: 10px 1px 1px 1px;
+			}
+			
+			input[type = button]{
+				margin-top: 10px;
+			}
+			
+			
+			
+		</style>
+	</head>
+
+	<body>
+	
+		<header>
+				<h2>WEB SHOPPING</h2>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><h3>HOME</h3></li>
+				<li><h3>SHOPPING</h3></li>
+				<li><h3>ABOUT</h3></li>
+				<li><h3>NEWS</h3></li>
+				<li><h3>ACCOUNT</h3></li>
+				<li><h3>CONTACTS</h3></li>
+			</ul>
+			<p>
+		</nav>
+		<div id = "skin">
+			<div id = "skeleton">
+				<aside id = left>
+					<div class = "pro01">
+						<h2>카테고리</h2>
+					</div>
+					<ul>
+						<li><h5><a href = "computer.html" target="iframe_box">컴퓨터</a></h5></li>
+						<li><h5><a href = "clothing.html" target="iframe_box">의류</a></h5></li>
+						<li><h5><a href = "music.html" target="iframe_box">음악</a></h5></li>
+						<li><h5><a href = "movie.html" target="iframe_box">영화</a></h5></li>
+						<li><h5><a href = "sports.html" target="iframe_box">스포츠/레저</a></h5></li>
+						<li><h5><a href = "interior.html" target="iframe_box">가구/인테리어</a></h5></li>
+						<li><h5><a href = "food.html" target="iframe_box">식품</a></h5></li>
+					</ul>
+				</aside>
+				
+				<section>
+				
+				<iframe src = "computer.html" name = "iframe_box"></iframe>
+				
+				</section>
+				
+				<aside id = right>
+					<div class = "pro01" id = "cart">
+						<h2>Shopping Cart</h2>
+						<figure>
+							<img id = "profile" src = "../img/moo.png" alt = "moo">
+						</figure>
+						
+						<div>
+						
+						</div>
+						
+						<form>
+							<h2>Log In</h2>
+							<div id = "register">
+								<h5>아이디</h5>
+								<input type = "text">						
+								<h5>패스워드</h5>						
+								<input type = "text">	
+								<input type = "button" value = "로그인">
+								<input type = "reset" value = "초기화">
+							</div>
+						</form>
+						<h5><a href = "register.html" target="iframe_box">회원가입</a></h5>
+						<h5><a href = "register.html" target="iframe_box">비밀번호 분실</a></h5>	
+						
+					</div>
+					
+				</aside>
+			
+			</div>
+		</div>
+		<footer>
+			<h5>footer</h5>
+		</footer>
+	</body>
+</html>

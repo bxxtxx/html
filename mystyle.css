@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+h2,h3 {
+	font-family: sans-serif;
+	margin: auto;
+}
+
+h5 {
+	margin: 10px;
+	color: #252525;
+}
+
+p {clear:both;}
+
+
+article {
+	width: 26%;
+	height: 400px;
+	background: white;
+	border-radius: 10px;
+	margin: 5px;
+	padding: 20px;
+	float: left;
+	overflow : auto;
+	
+}
+
+a:link, a:visited{
+  text-decoration: none;	
+  color : black;
+  display : inline-block;
+  width: 150px;
+  padding : 5px 5px;
+
+	
+}
+
+a:hover, a:active {
+  text-decoration: none;	
+  background-color: #EDEDED;
+}
+
+
+.box img{
+	width: 100%;
+}
+
+.box input[type = button]{
+
+	position: relative;
+	bottom: 5px;	
+}
+
+#imageCase{
+	
+	height: 200px;
+	
+	
+}
+
