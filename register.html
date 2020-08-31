@@ -3,12 +3,101 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Insert title here</title>
-		<link href = "mystyle.css" rel = "stylesheet">
 	</head>
-
+	
+	<style>
+		.box{
+			width : 100%;
+		}
+		
+		form{
+			width: 100%;
+		}
+		
+		article{
+			width : 70%;
+			margin: 35px auto;
+		}
+		
+		fieldset {
+			width : 100%;
+			background: white;
+		}
+		
+		h5{
+			display: inline;
+			
+		}
+		
+		legend{
+			    background: white;
+    			border: 1px solid;
+    			border-radius: 5px;
+		}
+	</style>
+	
 	<body>
 		<div class = "box">
-			<article>회원가입</article>		
+			<form>
+				<article>
+				<fieldset>
+				<legend>회원정보 입력</legend>
+				
+				<table>
+					<tr>
+						<td><h5>아이디</h5></td>
+						<td><input type = "text"></td>
+						<td><input type = "button" value = "중복검사"></td>
+					</tr>
+					<tr>
+						<td><h5>패스워드</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>패스워드 확인</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>이름</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>휴대폰 번호</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>이메일</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>생일</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>홈페이지</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					<tr></tr>
+					<tr>
+						<td><input type = "radio" name = "gender" value = "male"><h5>남성</h5></td>
+						<td><input type = "radio" name = "gender" value = "female"><h5>여성</h5></td>
+					</tr>
+					
+					
+				</table>
+				</fieldset>
+				
+				<input type = "submit" value = "제출">
+				<input type = "reset" value = "초기화">
+				
+				</article>		
+			</form>
 		</div>
 		
 	</body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<style>
+		.box{
+			width : 100%;
+		}
+		
+		form{
+			width: 100%;
+		}
+		
+		article{
+			width : 70%;
+			margin: 35px auto;
+		}
+		
+		fieldset {
+			width : 100%;
+			background: white;
+			
+		}
+		
+		h5{
+			display: inline;
+			
+		}
+		
+		legend{
+			    background: white;
+    			border: 1px solid;
+    			border-radius: 5px;
+		}
+		
+	</style>
+	
+	<body>
+		<div class = "box">
+			<form>
+				<article>
+				<fieldset>
+				<legend>비밀번호 찾기</legend>
+				
+				<table>
+					<tr>
+						<td><h5>아이디</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					<tr>
+						<td><h5>이름</h5></td>
+						<td><input type = "text"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>핸드폰 번호</h5></td>
+						<td><input type = "text"></td>
+						<td><input type = "button" value = "인증번호 발신"></td>
+					</tr>
+					
+					<tr>
+						<td><h5>인증번호</h5></td>
+						<td><input type = "text"></td>
+						<td><input type = "button" value = "인증번호 확인"></td>
+					</tr>
+					
+					
+				</table>
+				</fieldset>
+				
+				<input type = "submit" value = "제출">
+				<input type = "reset" value = "초기화">
+				
+				</article>		
+			</form>
+		</div>
+		
+	</body>
+</html>

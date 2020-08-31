@@ -2,11 +2,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Web shop</title>
 		<link href = "mystyle.css" rel = "stylesheet">
 		
 		<style>
-		
+			
+			body {
+				min-width : 820px; 
+			}
+			
 			header{
 				width: 100%;
 				height: 60px;
@@ -20,8 +24,6 @@
 				color : white;
 				margin : 10px;
 			}
-			
-			
 			
 			nav{
 				border-top : 2px solid black;
@@ -52,20 +54,20 @@
 		
 			
 			#profile{
-				width: 150px;
-				height: 150px;
+				width: 80%;
 				border-radius: 50%; 
 			}
 			
 			#skin{
 				background-image: url(../img/footprint.png);
 				background-repeat: no-repeat;
-				height: 1280px;
+				height: 860px;
 			}
 			
 			aside{
+				box-sizing : border-box;
 				border : 1px solid red;
-				width : 20%;
+				width : calc(20% - 1%);
 				border : 1px solid #D9D9D9;
 				border-radius : 10px;
 				background : white;
@@ -79,7 +81,8 @@
 			
 			
 			section{
-				width: 57%;
+				box-sizing : border-box;
+				width: calc(57% - 1%) ;
 				float : left;
 				margin: 0px 15px 50px;
 				background : #D9D9D9;
@@ -87,7 +90,7 @@
 			}
 			
 			#skeleton{
-				width: 1280px;
+				width: 82%;
 				height : 100%;
 				margin: 40px auto;
 			}
@@ -100,8 +103,14 @@
 				width : 1280px;
 				background : black;
 				border-radius : 5px;
+				text-align: center;
 			}
 			
+			footer h5{
+				color : white;
+				padding-top: 20px;
+			}
+						
 			iframe{
 				width: 100%;
 				height: 500px;
@@ -120,6 +129,18 @@
 			
 			input[type = button]{
 				margin-top: 10px;
+			}
+			
+			
+			#right figure h6 {
+				margin-top: 10px;
+    			margin-bottom: 10px;
+			}
+			#right figure div {
+				text-align: left;
+			}
+			#right figure div h6 {
+				margin-top: 5px;
 			}
 			
 			
@@ -172,8 +193,12 @@
 						<h2>Shopping Cart</h2>
 						<figure>
 							<img id = "profile" src = "../img/moo.png" alt = "moo">
+							<h6>현재 쇼핑카트에 물품이 없습니다.</h6>
+							<div>
+								<h6><a href = "cart.html" target = "iframe_box">쇼핑카트 보기</a></h6>
+							</div>
 						</figure>
-						
+												
 						<div>
 						
 						</div>
@@ -190,7 +215,7 @@
 							</div>
 						</form>
 						<h5><a href = "register.html" target="iframe_box">회원가입</a></h5>
-						<h5><a href = "register.html" target="iframe_box">비밀번호 분실</a></h5>	
+						<h5><a href = "findInfo.html" target="iframe_box">비밀번호 분실</a></h5>	
 						
 					</div>
 					
@@ -199,7 +224,7 @@
 			</div>
 		</div>
 		<footer>
-			<h5>footer</h5>
+			<h5>Copyright (c) 2020 web shop</h5>
 		</footer>
 	</body>
 </html>

@@ -14,7 +14,8 @@ p {clear:both;}
 
 
 article {
-	width: 26%;
+	box-sizing : border-box;
+	width:  calc(33% - 9px);
 	height: 400px;
 	background: white;
 	border-radius: 10px;
@@ -46,7 +47,7 @@ a:hover, a:active {
 }
 
 .box input[type = button]{
-
+	
 	position: relative;
 	bottom: 5px;	
 }
@@ -55,6 +56,10 @@ a:hover, a:active {
 	
 	height: 200px;
 	
+}
+
+input[type = text]{
 	
+	width : 70%;
 }
 
